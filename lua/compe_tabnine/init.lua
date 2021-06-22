@@ -35,11 +35,11 @@ end
 -- locate the binary here, as expand is relative to the calling script name
 local binary = nil
 if fn.has("mac") == 1 then
-	binary = fn.stdpath('data') .. '/plugged/compe-tabnine/binaries/TabNine_Darwin'
+	binary = fn.stdpath('config') .. '/plugged/compe-tabnine/binaries/TabNine_Darwin'
 elseif fn.has('unix') == 1 then
-	binary = fn.stdpath('data') .. '/plugged/compe-tabnine/binaries/TabNine_Linux'
+	binary = fn.stdpath('config') .. '/plugged/compe-tabnine/binaries/TabNine_Linux'
 else
-	binary = fn.stdpath('data') .. '/plugged/compe-tabnine/binaries/TabNine_Windows'
+	binary = fn.stdpath('config') .. '/plugged/compe-tabnine/binaries/TabNine_Windows'
 end
 
 local function is_enabled()
